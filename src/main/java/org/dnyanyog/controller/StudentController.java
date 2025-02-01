@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class StudentController {
 	
 	@GetMapping(path="/studentInfo", produces={"application/json"}) //here after produces if you write {"application.json"} it will return your object in json format 
-	public Students std() {											// if you write application/xml it will return your object in xml format.
+	public Students std() {						// if you write application/xml it will return your object in xml format.
 		Students std = new Students();
 		std.firstName = "Shreyash";
 		std.lastName = "Sutar";
